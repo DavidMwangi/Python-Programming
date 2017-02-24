@@ -15,6 +15,8 @@ courses = ['CS', 'Arts', 'Medicine']
 
 grades = [90, 80, 85]
 
+// Just a comment
 student = input("Enter student name: ")
+
 
 print(get_grade(student, names, courses, grades))
