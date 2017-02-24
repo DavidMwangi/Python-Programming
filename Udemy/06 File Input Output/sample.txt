@@ -1,0 +1,5 @@
+This is a sample file
+
+I am loving programming in Python
+
+OOP in Python looks quite interesting
