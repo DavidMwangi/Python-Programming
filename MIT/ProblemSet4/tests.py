@@ -121,7 +121,7 @@ def displayHand(hand):
     for letter in hand.keys():
         for j in range(hand[letter]):
              print(letter,end=" ")       # print all on the same line
-    #print()                             # print an empty line
+    print()                             # print an empty line
 
 #
 # Problem #2: Make sure you understand how this function works and what it does!
