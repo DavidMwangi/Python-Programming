@@ -3,8 +3,8 @@
 Error Handling skill is one of the basic python skills every python programmer should have.
 Other than letting computers handle errors for us, having control of how our code handles
 the errors that occur is pretty sleek.
-One of the basic ways to do that is havint the try-except clause.
-However on this file, I am going to be catching specific error off the code.
+One of the basic ways to do that is having the try-except clause.
+However, on this file, I am going to be catching specific error off the code.
 Check it out
 
 """
@@ -28,6 +28,8 @@ while True:
             break
 
         ans =  (x/2) / (x-y)
+
+        #Except clauses come after this because this is where a check is done
 
 
     except ZeroDivisionError as e:
