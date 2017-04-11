@@ -11,13 +11,15 @@ Why OOP?
 
 OOP methodology creates a custom datatype(object) and defines it's properties.
 
+A constructor function is a function that gets executed whenever a new instance of a class is created.
+
+
 """
 
 from math import pi
+from random import uniform
 
-def calcCircumference(radius):
 
-    return pi * radius * 2
 
 """
 
@@ -31,23 +33,36 @@ circle[0][2] = calcCircumference(circle[0][1])
 print(circle)
 """
 
-class Circle: #Circle Class Definition
+#Circle Class Definition
 
-    pass
+class Circle:
+    
+    #member properties of class Circle
+    
+    def calcCircumference(self):
 
-#Circumference using range
+        return pi * self.radius * 2
 
+    def calcDiameter(self):
+
+        return 2 * self.radius
+
+    def calcArea(self):
+
+        return pi * pow(self.radius,2)
 
 circles = []
 
-for i in range(0,3):
+for i in range(0,10):
+
+    c = Circle()
+    c.radius = uniform(1.1,9.5)
+    circles. append(c)
+
     
-    c = Circle() #creates a circle instance c for every iteration
-    c.radius = uniform(1.1,9.5) #assign a random uniform radius to the circle c
-    c.circumference = calcCircumference(c.radius) #calculates the circumference for that circle intance
-    
-    circles.append(c) #appends the instance properties to list circle
-    
-for c in circles: #Loops over list circles and prints out each instances radius and circumference
-    
-    print("Radius: ", c.radius, " Circumference: ",c.circumference) 
+for c in circles:
+
+    print("Radius:", c.radius,\
+          "Circumference:", c.calcCircumference(),\
+          "Diameter:", c.calcDiameter(),\
+          "Area:", c.calcArea())
