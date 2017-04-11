@@ -36,8 +36,18 @@ print(circle)
 #Circle Class Definition
 
 class Circle:
-    
+
     #member properties of class Circle
+
+    def __init__(self, radius): #Constructor function
+
+        if radius == 0:
+
+            self.radius = uniform(1.1,9.5) #each instance automatically has a radius
+
+        else:
+
+            self.radius = radius
     
     def calcCircumference(self):
 
@@ -56,7 +66,6 @@ circles = []
 for i in range(0,10):
 
     c = Circle()
-    c.radius = uniform(1.1,9.5)
     circles. append(c)
 
     
