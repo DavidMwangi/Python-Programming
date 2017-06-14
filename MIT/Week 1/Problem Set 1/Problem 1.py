@@ -14,8 +14,8 @@ vowels = 'aeiou'
 
 s = 'azcbobobegghakl'
 
-count = 0
-iteration = 0
+count = 0 #Keeps count of the vowels
+iteration = 0 #Iteration variable
 
 while iteration < len(s):
     
